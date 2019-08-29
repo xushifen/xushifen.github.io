@@ -21,42 +21,31 @@ tags: 搭建博客
 
 1. ##### 安装Jekeyll：Jekyll是一个生成静态网页的工具。**Windows**(上)和**mac os**(下)安装指南：
 
-   ​
+   ```
+   1. 下载Ruby+Devkith，默认安装
+   2. 下载RubyGerms，加压，进入管理员模式下命> 令行安装，输入ruby setup.rb。（该软件是Ruby的包管理器，也就是下载中心）
+   3. 安装Jekyll，在cmd模式下，输入命令 gem install jekyll，使用jekyll -v 检查是否安装成功。
+   ```
 
->   1. 下载[Ruby+Devkith](ttps://rubyinstaller.org/downloads/)，默认安装
->   2. 下载[RubyGerms](https://rubygems.org/pages/download)，加压，进入管理员模式下命> 令行安装，输入ruby setup.rb。（该软件是Ruby的包管理器，也就是下载中心）
->   3. 安装Jekyll，在cmd模式下，输入命令 gem install jekyll，使用jekyll -v 检查是否安装成功。
-
-
-> 1. xcode-select --install : 编译模块
->
-> 2. 安装ruby
->    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
->
->    brew install ruby 
->
->    export PATH=/usr/local/opt/ruby/bin:$PATH
->
-> 3. 安装rbenv
->    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
->
->    brew install rbenv
->
->    rbenv init
->
->    curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
->
-> 4. 安装Jekyll 
->    gem install --user-install bundler jekyll
->
->    export PATH=$HOME/.gem/ruby/X.X.0/bin:$PATH
-
+   ```
+   1. xcode-select --install : 编译模块
+   2. 安装ruby
+      /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      brew install ruby 
+      export PATH=/usr/local/opt/ruby/bin:$PATH
+   3. 安装rbenv
+      /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      brew install rbenv
+      rbenv init
+      curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
+   4. 安装Jekyll 
+      gem install --user-install bundler jekyll
+      export PATH=HOME/.gem/ruby/X.X.0/bin:PATH
+   ```
 
 
 
 2. ##### 安装git bash
-
-
 
 
 ### 搭建步骤
