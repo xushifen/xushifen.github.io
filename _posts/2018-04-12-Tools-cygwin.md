@@ -2,8 +2,8 @@
 layout: post
 title:  "Linux模拟软件"
 date:   2018-04-11 23:10:00
-categories: Program
-tags: cygwin
+categories: 生信工具
+tags: 辅助软件
 ---
 
 

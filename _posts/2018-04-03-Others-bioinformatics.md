@@ -2,8 +2,8 @@
 layout: post
 title:  "生物信息概要"
 date:   2018-04-03 19:06:05
-categories: Bioinformatics
-tags: Introduction
+categories: 其他
+tags: 生信介绍
 ---
 
 ###  生物信息概念
