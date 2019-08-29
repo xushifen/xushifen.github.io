@@ -21,25 +21,20 @@ tags: 搭建博客
 
 1. ##### 安装Jekeyll：Jekyll是一个生成静态网页的工具。**Windows**(上)和**mac os**(下)安装指南：
 
+>   1. 下载[Ruby+Devkith](ttps://rubyinstaller.org/downloads/)，默认安装
+>   2. 下载[RubyGerms](https://rubygems.org/pages/download)，加压，进入管理员模式下命> 令行安装，输入ruby setup.rb。（该软件是Ruby的包管理器，也就是下载中心）
+>   3. 安装Jekyll，在cmd模式下，输入命令 gem install jekyll，使用jekyll -v 检查是否安装成功。
    ```markdown
-   1. 下载[Ruby+Devkith](ttps://rubyinstaller.org/downloads/)，默认安装
+1. xcode-select --install : 编译模块
 
-   2. 下载[RubyGerms](https://rubygems.org/pages/download)，加压，进入管理员模式下命令行安装，输入ruby setup.rb。（该软件是Ruby的包管理器，也就是下载中心）
-
-   3. 安装Jekyll，在cmd模式下，输入命令 gem install jekyll，使用jekyll -v 检查是否安装成功。
-   ```
-
-   ```markdown
-   1. xcode-select --install : 编译模块
-
-   2. ：安装ruby
+2. ：安装ruby
    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
    brew install ruby 
 
    export PATH=/usr/local/opt/ruby/bin:$PATH
 
-   3. 安装rbenv
+3. 安装rbenv
    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
    brew install rbenv
@@ -48,11 +43,10 @@ tags: 搭建博客
 
    curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
 
-   4. 安装Jekyll 
+4. 安装Jekyll 
    gem install --user-install bundler jekyll
 
    export PATH=$HOME/.gem/ruby/X.X.0/bin:$PATH
-
    ```
 
 
@@ -62,15 +56,17 @@ tags: 搭建博客
 ### 搭建步骤
 
 1. ##### 注册github账号，并且建立博客Github仓库。创建方法有两种：
-   ```markdown
-   1. 从头开始设置主题
 
-   2. 直接fork他人的blog主题：
-   	* [极简主题](https://github.com/poole/poole)
-   	* [Jekyll 主题](http://jekyllthemes.org/)
+   > 1. 从头开始设置主题
+   >
+   > 2. 直接fork他人的blog主题：
+   >   * [极简主题](https://github.com/poole/poole)
+   >   * [Jekyll 主题](http://jekyllthemes.org/)
+   >
+   > 注意：仓库名字一定要和自己的账户名字一致：**Repository name** :  *githubname.github.io*
 
-   注意：仓库名字一定要和自己的账户名字一致：**Repository name** :  *githubname.github.io*
-   ```
+   ​
+
 2. ##### 了解Jekyll博客的目录结构
    - **_config_yml**：全局配置文件，包含基础设置、侧边栏设置、社交账号和评论系统等
    - **_posts：**博客文章存放位置
@@ -81,16 +77,19 @@ tags: 搭建博客
    - **categories：**文章分类
    - **index.html：**首页网页格式
    - ***自定义文件和目录***
+
 3.  ##### 撰写博客
-   ```markdown
-   博客文章可以使用markdown或html来编写，因为markdown是轻量编辑语言，所以推荐使用markdown来书写文章。但需要注意几点：
 
-   1. md文件需要包含描述文章类型的title，具体参照[Github md](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)。
+   > 博客文章可以使用markdown或html来编写，因为markdown是轻量编辑语言，所以推荐使用markdown来书写文章。但需要注意几点：
+   >
+   > 1. md文件需要包含描述文章类型的title，具体参照[Github md](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)。
+   >
+   > 2. md文件的命名需要符合[Permalinks](https://jekyllrb.com/docs/permalinks/)。
+   >
+   > 3. md文件所包含的图片等，需要放置在_posts/img/目录，并且路径需要换成网页版绝对路径。如 “https://raw.githubusercontent.com/HuaZou/HuaZou.github.io/master/_posts/img/R.cbind-1.png”
 
-   2. md文件的命名需要符合[Permalinks](https://jekyllrb.com/docs/permalinks/)。
+   ​
 
-   3. md文件所包含的图片等，需要放置在_posts/img/目录，并且路径需要换成网页版绝对路径。如 “https://raw.githubusercontent.com/HuaZou/HuaZou.github.io/master/_posts/img/R.cbind-1.png”
-   ```
 4. ##### 本地渲染后上传至git仓库
 
    - 打开powershell，并进入到博客目录；
