@@ -89,7 +89,7 @@ tags: 搭建博客
 
    2. md文件的命名需要符合[Permalinks](https://jekyllrb.com/docs/permalinks/)。
 
-   3. md文件所包含的图片等，需要放置在_posts/img/目录，并且路径需要换成网页版绝对路径。如 “![](https://raw.githubusercontent.com/HuaZou/HuaZou.github.io/master/_posts/img/R.cbind-1.png)”
+   3. md文件所包含的图片等，需要放置在_posts/img/目录，并且路径需要换成网页版绝对路径。如 “https://raw.githubusercontent.com/HuaZou/HuaZou.github.io/master/_posts/img/R.cbind-1.png”
    ```
 4. ##### 本地渲染后上传至git仓库
 
