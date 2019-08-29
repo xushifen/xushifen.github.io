@@ -55,16 +55,13 @@ tags: 搭建博客
 
    ```
 
-   ​
 
 2. ##### 安装git bash
 
-   ​
 
 ### 搭建步骤
 
 1. ##### 注册github账号，并且建立博客Github仓库。创建方法有两种：
-
    ```markdown
    1. 从头开始设置主题
 
@@ -74,33 +71,17 @@ tags: 搭建博客
 
    注意：仓库名字一定要和自己的账户名字一致：**Repository name** :  *githubname.github.io*
    ```
-
-   ​
-
 2. ##### 了解Jekyll博客的目录结构
-
    - **_config_yml**：全局配置文件，包含基础设置、侧边栏设置、社交账号和评论系统等
-
    - **_posts：**博客文章存放位置
-
    - **_layouts：**页面模板
-
    - **_includes**：html页面设计
-
    - **_sass：**存放样式表
-
    - **assets：**原生的资源文件，如js、css和image等文件夹
-
    - **categories：**文章分类
-
    - **index.html：**首页网页格式
-
    - ***自定义文件和目录***
-
-     ​
-
-3. ##### 撰写博客
-
+3.  ##### 撰写博客
    ```markdown
    博客文章可以使用markdown或html来编写，因为markdown是轻量编辑语言，所以推荐使用markdown来书写文章。但需要注意几点：
 
@@ -110,9 +91,6 @@ tags: 搭建博客
 
    3. md文件所包含的图片等，需要放置在_posts/img/目录，并且路径需要换成网页版绝对路径。如 “![](https://raw.githubusercontent.com/HuaZou/HuaZou.github.io/master/_posts/img/R.cbind-1.png)”
    ```
-
-   ​
-
 4. ##### 本地渲染后上传至git仓库
 
    - 打开powershell，并进入到博客目录；
@@ -121,17 +99,17 @@ tags: 搭建博客
 
 
 
-## Github Pages的局限性
+### Github Pages的局限性
 
 Github Pages 并不是无限存储和无限流量的静态站点服务，一些限制如下：
 
 - 内容存储不能超过1GB。
-
 - 每个月100GB流量带宽。
-
 - 每小时编译构建次数不超过10次。（在线修改重新编译并未发现这个限制）
 
-  ​
+### 注意事项
+1. 文章内图片过大，可以通过压缩图片[图快好](https://www.tuhaokuai.com/)
+
 
 ### 安装过程遇到的问题
 

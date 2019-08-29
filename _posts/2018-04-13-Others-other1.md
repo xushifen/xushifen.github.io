@@ -8,7 +8,7 @@ tags: 杂类
 
 
 
-### 一、sci-hub网址
+### sci-hub网址
 
 科研狗的福利网站，各种及时免费的文献下载
 
@@ -20,7 +20,7 @@ tags: 杂类
 
 
 
-### 二、修改jupyter notebook打开路径
+### 修改jupyter notebook打开路径
 
 jupyter是一个编辑器，可以生成各种你所需要的格式：md、html等等
 
@@ -43,7 +43,7 @@ jupyter是一个编辑器，可以生成各种你所需要的格式：md、html�
 
 
 
-### 三、Anaconda
+### Anaconda
 
 可以便捷获取包且对包能够进行管理，同时对环境可以统一管理的发行版本。Anaconda包含了conda、Python在内的超过180个科学包及其依赖项。
 
@@ -53,7 +53,7 @@ conda install -c r rstudio
 
 
 
-### 四、[Write paper](https://writing.wisc.edu/Handbook/SciRep/ScienceReport.html)
+### [Write paper](https://writing.wisc.edu/Handbook/SciRep/ScienceReport.html)
 
 写一篇科研论文是多少科研狗的必经之路，要是写论文能在光锥之内多好啊，这样它就是历史了，历史意味着我学会了，可它偏偏在光锥之外，我要爬过去！！！
 
@@ -66,7 +66,7 @@ Discussion
 
 
 
-### 五、[shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks)
+### [shadowsocks](https://en.wikipedia.org/wiki/Shadowsocks)
 
 Google因强大的搜索能力而著称，但国内现在不能访问Google，因为需要借用梯子，但VPN不适合科学上网，这个时候shadowsocks就是最佳的帮手了。
 
@@ -86,7 +86,7 @@ Google因强大的搜索能力而著称，但国内现在不能访问Google，�
 
 
 
-### 六、debug帮助网站
+### debug帮助网站
 
 * [stackoverflow](http://stackoverflow.com/questions) : 几乎涉及到各种语言的debug
 * [github](https://github.com/) :开源者的乐园
@@ -94,7 +94,7 @@ Google因强大的搜索能力而著称，但国内现在不能访问Google，�
 
 
 
-### 七、R和python差异
+### R和python差异
 
 * [数据IO](https://shiring.github.io/r_vs_python/2017/01/22/R_vs_Py_post)
 * [数据类型](https://gigadom.wordpress.com/2017/05/22/r-vs-python-different-similarities-and-similar-differences/)
@@ -102,7 +102,9 @@ Google因强大的搜索能力而著称，但国内现在不能访问Google，�
 
 
 
-#### Reference 
+
+
+### Reference 
 
 1. [修改jupyter路径](https://www.zhihu.com/question/31600197)
 2. [Anaconda使用指南](https://zhuanlan.zhihu.com/p/32925500)

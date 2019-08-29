@@ -22,5 +22,5 @@ tags: 生信介绍
    - [github](https://github.com/), [ProcessOn](https://www.processon.com/), [sharelatex](https://www.sharelatex.com/), [NCBI](https://www.ncbi.nlm.nih.gov/), [谷粉搜搜](https://gfsoso.99lb.net/)
 
 
-##### 了解生物信息以及其工具使用
+
 

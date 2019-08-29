@@ -14,7 +14,7 @@ tags: 辅助软件
 
 
 
-####  一、安装Cygwin
+####  安装Cygwin
 
 **1)**. 登陆[Cygwin官网](https://cygwin.com/)，选择与windows系统相同位数的版本
 
@@ -36,7 +36,8 @@ tags: 辅助软件
 
 
 
-#### 二、安装apt-cyg包
+
+#### 安装apt-cyg包
 
 因为Cygwin坑爹的设计，每次安装新的包总需要重新安装该软件一次，因此有开发者设计了apt-cyg包，该包功能上类似Linux的[apt-get](https://baike.baidu.com/item/apt-get/2360755?fr=aladdin)：
 
@@ -52,16 +53,12 @@ bzip2
 make
 ```
 
-
-
 **2)** 安装apt-cyg包
 
 ```bash
 lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
 install apt-cyg /bin
 ```
-
-
 
 **3)** apt-cyg用法：安装，删除，更新
 
@@ -71,18 +68,12 @@ apt-cyg remove packagename
 apt-cyg update packagename
 ```
 
-
-
 **4)** [fatty](https://github.com/juho-p/fatty)包使用：Cygwin只能有一个窗口，这个设计真是有点坑。因此有人开发了fatty，功能是可以create many tabs
-
-
 
 > To create new tab, press ctrl+shift+T
 > ctrl+shift+W closes the tab
 > To change active tab, click it with mouse or press shift+(left arrow|right arrow)
 > To move tab, press ctrl+shift+(arrow direction)
-
-
 
 ```bash
 git clone https://github.com/juho-p/fatty.git
@@ -93,7 +84,7 @@ cp src/fatty.exe /bin
 
 
 
-#### 三、免密码登陆
+#### 免密码登陆
 
 通过Cygwin登陆大型机，需要用户名和密码，但可以通过[RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))生成公钥形式解决
 
@@ -106,7 +97,8 @@ cat ~/.ssh/id_rsa.pub
 
 
 
-#### 四、本地与大型机传输文件
+
+#### 本地与大型机传输文件
 
 使用[scp](https://www.cnblogs.com/likui360/p/6011769.html)命令，在使用期先设置大型机的别名信息，方便使用scp命令
 
@@ -120,7 +112,7 @@ scp file.txt  alias2:/hwfssz1/filedir/  # 本地传输到大型机
 
 
 
-#### 五、小技巧
+#### 小技巧
 
 * 命令行打开文件或者文件夹：cygstart: start a program or open a file or url
 
@@ -139,8 +131,6 @@ cygstart dir/
 > - /h : creats a     hard link instead of a symbolic link
 > - /j create a     Directory junction
 > - eg : mklink /d     c:Users\Desktop\AAA      c:\Document\ABC   在桌面建立名为AAA的软连接，连接至文件的ABC目录
-
-
 
 * 修改find：Cygwin默认使用windows的find
 
