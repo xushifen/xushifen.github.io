@@ -48,6 +48,8 @@ tags: 搭建博客
 2. ##### 安装git bash
 
 
+
+
 ### 搭建步骤
 
 1. ##### 注册github账号，并且建立博客Github仓库。创建方法有两种：
@@ -59,8 +61,6 @@ tags: 搭建博客
    >   * [Jekyll 主题](http://jekyllthemes.org/)
    >
    > 注意：仓库名字一定要和自己的账户名字一致：**Repository name** :  *githubname.github.io*
-
-   ​
 
 2. ##### 了解Jekyll博客的目录结构
    - **_config_yml**：全局配置文件，包含基础设置、侧边栏设置、社交账号和评论系统等
@@ -83,13 +83,12 @@ tags: 搭建博客
    >
    > 3. md文件所包含的图片等，需要放置在_posts/img/目录，并且路径需要换成网页版绝对路径。如 “https://raw.githubusercontent.com/HuaZou/HuaZou.github.io/master/_posts/img/R.cbind-1.png”
 
-   ​
-
 4. ##### 本地渲染后上传至git仓库
 
    - 打开powershell，并进入到博客目录；
    - 输入 bundle exec jekyll serve进行渲染生成静态网页；
    - 本地查看静态网址：<http://127.0.0.1:4000/>
+
 
 
 
@@ -101,8 +100,12 @@ Github Pages 并不是无限存储和无限流量的静态站点服务，一些�
 - 每个月100GB流量带宽。
 - 每小时编译构建次数不超过10次。（在线修改重新编译并未发现这个限制）
 
+
+
 ### 注意事项
-1. 文章内图片过大，可以通过压缩图片[图快好](https://www.tuhaokuai.com/)
+
+文章内图片过大，可以通过压缩图片[图快好](https://www.tuhaokuai.com/)
+
 
 
 ### 安装过程遇到的问题
@@ -118,6 +121,7 @@ Github Pages 并不是无限存储和无限流量的静态站点服务，一些�
    - 问题：无法查看静态网页。
    - 原因：连接github出错或者md文件名字包含中文
    - 解决办法：用英文重新命名md文件
+
 
 
 
