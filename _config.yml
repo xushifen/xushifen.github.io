@@ -6,42 +6,54 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 华仔 | Blog
-brief-intro: Bioinformatics, postgraduate, Worker
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://HuaZou.github.io" # the base hostname & protocol for your site
+title: Hua's Blog
+subtitle: Less is more.
+description: Bioinformatics, postgraduate, Worker..
+author: Hua Zou
 
-permalink: /:year/:month/:day/:title/
+
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
-language: en
+language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # URL
-github_username:  HuaZou
-email: bioinf_zou@163.com
-github: https://github.com/HuaZou
+## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
+url: http://HuaZou.github.io # the base hostname & protocol for your site
+# baseurl:
+permalink: /:year/:month/:day/:title/
+
 
 # Pagination
-# paginate
-plugins: [jekyll-paginate]
-paginate: 6
+paginate: 10
+#paginate_path: "/page:num/"
+#archive:
+  #paginate: 10
+  #paginate_path: "/page:num/"
+#category:
+  #paginate: 10
+  #paginate_path: "/page:num/"
+#tag:
+  #paginate: 10
+  #paginate_path: "/page:num/"
 
 # Handling Reading
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "Gemfile", "Gemfile.lock", "README_en.md", "vendor"]
+# exclude: ["README.md"]
 
+# Separator
+#excerpt_separator: <!-- more -->
 
 # Code Highlighter
 ## 'pygments' is unsupported on GitHub Pages now.
 highlighter: rouge
 highlight:
   line_number: true
+  auto_detect: true
 
 #### Markdown Processors
 ## 'redcarpet' is unsupported on GitHub Pages now.
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter: rouge
 
 # Default Attributes
 ## Docs: https://jekyllrb.com/docs/configuration/#front-matter-defaults
@@ -64,13 +76,14 @@ plugins:
  - jemoji
  - jekyll-sitemap
  - jekyll-feed
-
+ - jekyll-language-plugin
+ 
 # ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
 
 # Put your favicon.ico into `assets/` directory.
-favicon: /assets/favicon.ico
+favicon: /assets/favicon.png
 
 # Set default keywords (Use a comma to separate)
 keywords: "Jekyll, NexT"
@@ -81,7 +94,7 @@ keywords: "Jekyll, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2018
 
 # icon between year and author @Footer
 authoricon: heart
@@ -103,7 +116,7 @@ seo: false
 
 # If true, will add site-subtitle to index page, added in jekyll config.
 # subtitle: Subtitle
-index_with_subtitle: false
+index_with_subtitle: true
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -112,10 +125,14 @@ index_with_subtitle: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  #categories: /categories/
-  #about: /about/
-  archives: /archives/
-  tags: /tags/
+  about: /pages/about/
+  #resume: /resume/
+  archives: /pages/archives/
+  categories: /pages/categories/
+  tags: /pages/tags/
+  #message: /pages/message/
+  #myseo: /myseo/
+  
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -136,8 +153,12 @@ menu_icons:
   archives: archive
   sitemap: sitemap
   commonweal: heartbeat
-
-
+  #myseo: internet-explorer
+  #resume: handshake-o
+  #message: commenting
+  #friends: link
+  #file: file-archive-o
+  #ariang: cloud-download
 
 
 # ---------------------------------------------------------------
@@ -145,9 +166,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -174,7 +195,7 @@ font:
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
+    family: Roboto Slab
 
   # Font settings for posts
   # Fallback to `global` font settings.
@@ -193,7 +214,7 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: PT Mono
     size:
 
 
@@ -207,8 +228,9 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  GitHub: https://github.com/HuaZou
+  Email: zouhua1@outlook.com
 
 
 # Social Links Icons
@@ -223,11 +245,12 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  Email: envelope-o 
 
 
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
-#avatar:
+avatar: /assets/avatar.png
 
 
 # Table Of Contents in the Sidebar
@@ -244,7 +267,7 @@ toc:
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
+creative_commons: by-nc-sa
 #creative_commons:
 
 
@@ -258,9 +281,9 @@ sidebar:
   #  - always  expand for all pages automatically
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
-  display: post
+  #display: post
   #display: always
-  #display: hide
+  display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels.
@@ -271,7 +294,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button
-  scrollpercent: false
+  scrollpercent: true
 
 
 # Blog rolls
@@ -290,7 +313,7 @@ sidebar:
 scroll_to_more: true
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: false
+save_scroll: true
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
@@ -298,21 +321,21 @@ excerpt_description: true
 # Automatically Excerpt. Not recommend.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 50
 
 # Post meta display settings
 post_meta:
   item_text: true
   created_at: true
-  updated_at: false
+  updated_at: true
   categories: true
 
 # Post wordcount display settings
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
   separated_meta: true
 
 # Wechat Subscriber
@@ -323,9 +346,9 @@ post_wordcount:
 
 # Declare license on posts
 post_copyright:
-  enable: false
-  license: CC BY-NC-SA 3.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
+  enable: true
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 
 
@@ -355,31 +378,31 @@ highlight_theme: normal
 # ---------------------------------------------------------------
 
 # MathJax Support
-mathjax:
-  enable: false
-  per_page: false
-  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
+#mathjax:
+#  enable: false
+#  per_page: false
+#  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
 # Han Support docs: https://hanzi.pro/
-han: false
+han: true
 
 # Swiftype Search API Key
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 1c0e89e84d0d601bb8acf46602ceb1c6
 
 # Duoshuo ShortName
 #duoshuo_shortname:
 
 # Disqus
-disqus:
-  enable: false
-  shortname:
-  count: true
+#disqus:
+#  enable: false
+#  shortname:
+#  count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
-  hide: false
+#  hide: false
 
 # <wildfire>
 wildfire:
@@ -430,11 +453,11 @@ changyan:
 # Support for gitalk comments system.
 gitalk:
   enable: false
-  clientID: # 54730ddf7b9420460c03
-  clientSecret: # c05684701b25ff1c19ea0c01ce4d80c125e0707d
-  repo: # colingpt.github.io
-  owner: # colingpt
-  admin: # colingpt
+  clientID:  1ea3fdf4e2aeeaab25c3
+  clientSecret:  72efc6377e73f9386f79c29c7d6cd64eee4ac10c
+  repo: HuaZou.github.io
+  owner: HuaZou
+  admin: HuaZou
 
 # Baidu Share
 # Available value:
@@ -456,7 +479,7 @@ gitalk:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-116757487-1 
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -472,10 +495,10 @@ gitalk:
 # Make duoshuo show UA
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
+#duoshuo_info:
+#  ua_enable: true
+#  admin_enable: false
+#  user_id: 0
   #admin_nickname: Author
 
 
@@ -729,9 +752,8 @@ js: assets/js
 images: assets/images
 
 
-# statistic analysis 统计代码
-baidu_tongji_id: 1c0e89e84d0d601bb8acf46602ceb1c6
-google_analytics_id: UA-116757487-1 
-
 # Theme version
 version: 5.1.1
+
+footer:
+  icon: heart
