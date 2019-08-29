@@ -112,7 +112,7 @@ copyright: true
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in jekyll config.
 # subtitle: Subtitle
@@ -147,10 +147,10 @@ menu_icons:
   #KeyMapsToMenuItemKey: NameOfTheIconFromFontAwesome
   home: home
   about: user
+  archives: archive  
   categories: th
-  schedule: calendar
   tags: tags
-  archives: archive
+  schedule: calendar  
   sitemap: sitemap
   commonweal: heartbeat
   #myseo: internet-explorer
@@ -189,7 +189,7 @@ font:
   global:
     # external: true will load this font family from host.
     external: true
-    family: Lato
+    family: Monda
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6)
   # Fallback to `global` font settings.
@@ -243,8 +243,8 @@ social_icons:
   # Icon Mappings.
   # KeyMapsToSocialItemKey: NameOfTheIconFromFontAwesome
   GitHub: github
-  Twitter: twitter
-  Weibo: weibo
+  #Twitter: twitter
+  #Weibo: weibo
   Email: envelope-o 
 
 
@@ -405,27 +405,27 @@ baidu_analytics: 1c0e89e84d0d601bb8acf46602ceb1c6
 #  hide: false
 
 # <wildfire>
-wildfire:
-  enable: false
-  # version - It's recommended to use the following versions.
-  loaderVersion: 1.2.5 # https://www.npmjs.com/package/wildfire-comment
-  useDev: true
-  version: 0.5.6 
-  # database config
-  databaseProvider: firebase # or wilddog
-  firebase: # your firebase config goes here ↓
-    apiKey: 
-    authDomain:
-    databaseURL:
-    projectId:
-    storageBucket:
-    messagingSenderId:
-  wilddog: # your wilddog config goes here ↓
-    siteId:
+#wildfire:
+#  enable: false
+#  # version - It's recommended to use the following versions.
+#  loaderVersion: 1.2.5 # https://www.npmjs.com/package/wildfire-comment
+#  useDev: true
+#  version: 0.5.6 
+#  # database config
+#  databaseProvider: firebase # or wilddog
+#  firebase: # your firebase config goes here ↓
+#    apiKey: 
+#    authDomain:
+#    databaseURL:
+#    projectId:
+#    storageBucket:
+#    messagingSenderId:
+#  wilddog: # your wilddog config goes here ↓
+#    siteId:
   # other configs
-  theme: light # or dark
-  locale: en # or other locales, e.g. zh-CN
-  defaultAvatarURL: 
+#  theme: light # or dark
+#  locale: en # or other locales, e.g. zh-CN
+#  defaultAvatarURL: 
 # Any question? 
 # Raise an issue here: https://github.com/cheng-kang/wildfire/issues
 # </wildfire>
@@ -533,7 +533,7 @@ vkontakte_api:
 # To get your ID visit https://widgetpack.com
 rating:
   enable: false
-  id:     #<app_id>
+  id:     20649
   color:  fc6423
 
 
