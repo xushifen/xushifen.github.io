@@ -2,6 +2,7 @@
 layout: post
 title:  "Anaconda"
 date:   2018-06-22 10:36:00
+updated: 2019-08-30
 categories: 生信工具
 tags: 辅助
 ---

@@ -2,6 +2,7 @@
 layout: post
 title:  "文献阅读方法"
 date:   2018-04-03 23:06:05
+updated: 2019-08-30
 categories: 文献
 tags: 阅读技巧
 ---

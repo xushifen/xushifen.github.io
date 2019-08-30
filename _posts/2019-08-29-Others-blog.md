@@ -2,6 +2,7 @@
 layout: post
 title:  "如何简单快速地搭建个人博客站点"
 date:   2019-08-29 10:36:00
+updated: 2019-08-30
 categories: 其他
 tags: 搭建博客
 ---

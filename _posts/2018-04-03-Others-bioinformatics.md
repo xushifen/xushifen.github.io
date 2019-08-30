@@ -2,6 +2,7 @@
 layout: post
 title:  "生物信息概要"
 date:   2018-04-03 19:06:05
+updated: 2019-08-30
 categories: 其他
 tags: 生信介绍
 ---
