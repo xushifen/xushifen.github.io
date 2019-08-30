@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linux模拟软件"
+title:  "Cygwin：Linux模拟软件"
 date:   2018-04-11 23:10:00
 categories: 生信工具
 tags: 辅助软件
@@ -134,9 +134,9 @@ cygstart dir/
 
 * 修改find：Cygwin默认使用windows的find
 
-```bash
+```markdown
 mv usr/bin/find.exe  find.cyg.exe
-echo 'alias find=\'find.cyg\'' >> ~/.bash_profile
+echo alias find=find.cyg >> ~/.bash_profile
 ```
 
 
