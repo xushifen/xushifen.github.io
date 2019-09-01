@@ -2,7 +2,7 @@
 layout: post
 title:  "扩增子分析：16s rRNA分析流程"
 date:   2019-09-01 
-updated: 2019-09-01
+updated: 2019-09-02
 categories: 分析流程
 tags: 16s
 ---
@@ -11,32 +11,32 @@ tags: 16s
 
 最开始听人讲扩增子分析，我是云里雾里完全听不懂的蒙蔽状态。后来有幸认识了一位不辞辛苦或者说对“傻子”友好的技术达人，在他的帮助下了解了**扩增子分析**内的16s rRNA的具体流程等。加上最近刚刚学习了流程管理工具**snakemake**，于是萌发了用snakemake串联16s分析的想法，说做就做，先看看前期数据处理的可视化图。
 
-![](https://raw.githubusercontent.com/HuaZou/HuaZou.github.io/master/_posts/img/pipeline_16s1.svg)
+![](https://raw.githubusercontent.com/HuaZou/HuaZou.github.io/master/_posts/img/pipeline_16s1.png)
 
 ### 数据
 
 18份来自**宏基因组公众号**的双端16s rRNA原始下机数据。
 
-| sample | BarcodeSequence | LinkerPrimerSequence | ReversePrimer      | group | genotype | site    | Description | fq1              | fq2              |
-| ------ | --------------- | -------------------- | ------------------ | ----- | -------- | ------- | ----------- | ---------------- | ---------------- |
-| KO1    | ACGCTCGACA      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | A     | KO       | Beijing | BeijingKO   | data/KO1_1.fq.gz | data/KO1_2.fq.gz |
-| KO2    | ATCAGACACG      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | A     | KO       | Beijing | BeijingKO   | data/KO2_1.fq.gz | data/KO2_2.fq.gz |
-| KO3    | ATATCGCGAG      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | A     | KO       | Sanya   | SanyaKO     | data/KO3_1.fq.gz | data/KO3_2.fq.gz |
-| KO4    | CACGAGACAG      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | A     | KO       | Sanya   | SanyaKO     | data/KO4_1.fq.gz | data/KO4_2.fq.gz |
-| KO5    | CTCGCGTGTC      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | A     | KO       | Harbin  | HarbinKO    | data/KO5_1.fq.gz | data/KO5_2.fq.gz |
-| KO6    | TAGTATCAGC      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | A     | KO       | Harbin  | HarbinKO    | data/KO6_1.fq.gz | data/KO6_2.fq.gz |
-| OE1    | TCTCTATGCG      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | B     | OE       | Beijing | BeijingOE   | data/OE1_1.fq.gz | data/OE1_2.fq.gz |
-| OE2    | TACTGAGCTA      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | B     | OE       | Beijing | BeijingOE   | data/OE2_1.fq.gz | data/OE2_2.fq.gz |
-| OE3    | CATAGTAGTG      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | B     | OE       | Sanya   | SanyaOE     | data/OE3_1.fq.gz | data/OE3_2.fq.gz |
-| OE4    | CGAGAGATAC      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | B     | OE       | Sanya   | SanyaOE     | data/OE4_1.fq.gz | data/OE4_2.fq.gz |
-| OE5    | ATACGACGTA      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | B     | OE       | Harbin  | HarbinOE    | data/OE5_1.fq.gz | data/OE5_2.fq.gz |
-| OE6    | TCACGTACTA      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | B     | OE       | Harbin  | HarbinOE    | data/OE6_1.fq.gz | data/OE6_2.fq.gz |
-| WT1    | CGTCTAGTAC      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | C     | WT       | Beijing | BeijingWT   | data/WT1_1.fq.gz | data/WT1_2.fq.gz |
-| WT2    | TCTACGTAGC      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | C     | WT       | Beijing | BeijingWT   | data/WT2_1.fq.gz | data/WT2_2.fq.gz |
-| WT3    | CACGCGAGTC      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | C     | WT       | Sanya   | SanyaWT     | data/WT3_1.fq.gz | data/WT3_2.fq.gz |
-| WT4    | ACGACTACAG      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | C     | WT       | Sanya   | SanyaWT     | data/WT4_1.fq.gz | data/WT4_2.fq.gz |
-| WT5    | CGTAGACTAG      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | C     | WT       | Harbin  | HarbinWT    | data/WT5_1.fq.gz | data/WT5_2.fq.gz |
-| WT6    | TACGAGTATG      | AACMGGATTAGATACCCKG  | ACGTCATCCCCACCTTCC | C     | WT       | Harbin  | HarbinWT    | data/WT6_1.fq.gz | data/WT6_2.fq.gz |
+| sample | fq1              | fq2              |
+| ------ | ---------------- | ---------------- |
+| KO1    | data/KO1_1.fq.gz | data/KO1_2.fq.gz |
+| KO2    | data/KO2_1.fq.gz | data/KO2_2.fq.gz |
+| KO3    | data/KO3_1.fq.gz | data/KO3_2.fq.gz |
+| KO4    | data/KO4_1.fq.gz | data/KO4_2.fq.gz |
+| KO5    | data/KO5_1.fq.gz | data/KO5_2.fq.gz |
+| KO6    | data/KO6_1.fq.gz | data/KO6_2.fq.gz |
+| OE1    | data/OE1_1.fq.gz | data/OE1_2.fq.gz |
+| OE2    | data/OE2_1.fq.gz | data/OE2_2.fq.gz |
+| OE3    | data/OE3_1.fq.gz | data/OE3_2.fq.gz |
+| OE4    | data/OE4_1.fq.gz | data/OE4_2.fq.gz |
+| OE5    | data/OE5_1.fq.gz | data/OE5_2.fq.gz |
+| OE6    | data/OE6_1.fq.gz | data/OE6_2.fq.gz |
+| WT1    | data/WT1_1.fq.gz | data/WT1_2.fq.gz |
+| WT2    | data/WT2_1.fq.gz | data/WT2_2.fq.gz |
+| WT3    | data/WT3_1.fq.gz | data/WT3_2.fq.gz |
+| WT4    | data/WT4_1.fq.gz | data/WT4_2.fq.gz |
+| WT5    | data/WT5_1.fq.gz | data/WT5_2.fq.gz |
+| WT6    | data/WT6_1.fq.gz | data/WT6_2.fq.gz |
 
 ### 步骤
 
