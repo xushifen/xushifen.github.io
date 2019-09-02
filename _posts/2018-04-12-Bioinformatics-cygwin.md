@@ -3,8 +3,8 @@ layout: post
 title:  "Cygwin：Linux模拟软件"
 date:   2018-04-11 23:10:00
 updated: 2019-08-30
-categories: 生信工具
-tags: 辅助软件
+categories: 生物信息
+tags: 工具
 ---
 
 

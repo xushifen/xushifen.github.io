@@ -10,15 +10,13 @@ title: Hua's Blog
 subtitle: Less is more.
 description: Bioinformatics, postgraduate, Worker.
 author: Hua Zou
-
-
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: http://HuaZou.github.io # the base hostname & protocol for your site
+url: http://HuaZou.github.io # the base hostname & protocol for your site   
 # baseurl:
 permalink: /:year/:month/:day/:title/
 
@@ -124,17 +122,17 @@ index_with_subtitle: true
 
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
-  home: /
-  about: /pages/about/
-  #resume: /resume/
-  archives: /pages/archives/
-  categories: /pages/categories/
-  tags: /pages/tags/
-  #message: /pages/message/
+  home: /                        #//首页
+  about: /pages/about/           #//关于
+  #resume: /resume/              //简历
+  archives: /pages/archives/     #//归档
+  categories: /pages/categories/ #//分类
+  tags: /pages/tags/             #//标签
+  #message: /pages/message/      //留言
   #myseo: /myseo/
-  
-  #sitemap: /sitemap.xml
-  #commonweal: /404.html
+  #schedule: /schedule/          //日程表
+  #sitemap: /sitemap.xml         //站点地图
+  #commonweal: /404.html          #//公益404
 
 
 # Enable/Disable menu icons.
@@ -150,9 +148,9 @@ menu_icons:
   archives: archive  
   categories: th
   tags: tags
-  schedule: calendar  
+  #schedule: calendar  
   sitemap: sitemap
-  commonweal: heartbeat
+  #commonweal: heartbeat
   #myseo: internet-explorer
   #resume: handshake-o
   #message: commenting
@@ -169,6 +167,7 @@ menu_icons:
 #scheme: Muse
 #scheme: Mist
 scheme: Pisces
+#scheme: Gemini
 
 
 # ---------------------------------------------------------------
@@ -272,9 +271,9 @@ creative_commons: by-nc-sa
 
 
 sidebar:
-  # Sidebar Position, available value: left | right
-  position: left
-  #position: right
+  # Sidebar Position, available value: left | right 侧栏位置（只对Pisces | Gemini两种风格有效）
+  position: left      # //靠左放置
+  #position: right    # //靠右放置
 
   # Sidebar Display, available value:
   #  - post    expand on posts automatically. Default.
@@ -282,8 +281,8 @@ sidebar:
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  Totally remove sidebar including sidebar toggle.
   #display: post
-  #display: always
-  display: hide
+  display: always
+  #display: hide
   #display: remove
 
   # Sidebar offset from top menubar in pixels.

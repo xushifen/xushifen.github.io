@@ -3,7 +3,7 @@ layout: post
 title:  "杂货收藏"
 date:   2018-04-12 16:10:00
 updated: 2019-08-30
-categories: 其他
+categories: 生活笔记
 tags: 杂类
 ---
 

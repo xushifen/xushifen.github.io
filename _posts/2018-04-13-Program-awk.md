@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "awk：文本处理"
+title:  "awk：shell下方便快捷的文本处理工具"
 date:   2018-04-12 11:10:00
 updated: 2019-08-30
-categories: 生信工具
-tags: 分析软件
+categories: 编程入门
+tags: awk
 ---
 
 

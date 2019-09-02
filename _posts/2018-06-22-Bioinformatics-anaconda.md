@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Anaconda"
+title:  "Anaconda：管理python包和软件的工具"
 date:   2018-06-22 10:36:00
 updated: 2019-08-30
-categories: 生信工具
-tags: 辅助
+categories: 生物信息
+tags: anaconda
 ---
 
 

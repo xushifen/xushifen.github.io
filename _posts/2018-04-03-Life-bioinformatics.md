@@ -3,8 +3,8 @@ layout: post
 title:  "生物信息概要"
 date:   2018-04-03 19:06:05
 updated: 2019-08-30
-categories: 其他
-tags: 生信介绍
+categories: 生活笔记
+tags: 生信概要
 ---
 
 ###  生物信息概念

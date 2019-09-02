@@ -3,8 +3,8 @@ layout: post
 title:  "snakemake：编写任务流程的工具"
 date:   2019-09-01 
 updated: 2019-09-01
-categories: 生信工具
-tags: 分析软件
+categories: 生物信息
+tags: 工具
 ---
 
 ### What's Snakemake?

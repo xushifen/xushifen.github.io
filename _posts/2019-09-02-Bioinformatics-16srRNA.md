@@ -3,8 +3,8 @@ layout: post
 title:  "扩增子分析：16s rRNA分析流程"
 date:   2019-09-01 
 updated: 2019-09-02
-categories: 分析流程
-tags: 16s
+categories: 生物信息
+tags: 流程
 ---
 
 ### 出发点
