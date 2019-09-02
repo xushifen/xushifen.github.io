@@ -279,7 +279,7 @@ rule OTU_tight_clusters:
 - 代表序列比对到16s rRNA参考数据库。
 - 控制比对identity参数。
 
-```
+```python
 rule assign_taxonomy:
     input:
         otu_ref = expand("{rechimeras}/OTU.rechimera_{{ref}}.{{type}}.fa", 
