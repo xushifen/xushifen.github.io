@@ -6,17 +6,17 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 物以类聚，人以群分
-subtitle: 做好当下
-description: 争做技术达人
-author: 华仔少年
+title: 活在当下，做好自己
+subtitle: 
+description: 
+author: 徐诗芬
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com' and baseurl as '/child'
-url: http://HuaZou.github.io # the base hostname & protocol for your site   
+url: https://xushifen.github.io # the base hostname & protocol for your site   
 # baseurl:
 permalink: /:year/:month/:day/:title/
 
@@ -225,8 +225,8 @@ font:
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
-  GitHub: https://github.com/HuaZou
-  Email: mailto:zouhua1@outlook.com
+  GitHub: https://github.com/xushifen
+  Email: xushifen1994@outlook.com
 
 
 # Social Links Icons
@@ -449,11 +449,11 @@ changyan:
 # Support for gitalk comments system.
 gitalk:
   enable: false
-  clientID:  1ea3fdf4e2aeeaab25c3
-  clientSecret:  72efc6377e73f9386f79c29c7d6cd64eee4ac10c
-  repo: HuaZou.github.io
-  owner: HuaZou
-  admin: HuaZou
+  clientID:  13bba66428d133693a7b
+  clientSecret:  fa2bdfb8992b4f145ea6dabfc52179de7ae8625b
+  repo: xushifen.github.io
+  owner: xushifen
+  admin: xushifen
 
 # Baidu Share
 # Available value:
