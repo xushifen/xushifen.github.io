@@ -9,11 +9,16 @@
    -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
   }
 
+// 主页文章文章宽度
+.header{ width: 80%; } /* 80% */
+.container .main-inner { width: 80%; } /* 80% */
+.content-wrap { width: calc(100% - 260px); }
 
 //文章内容背景改成了半透明
 .content-wrap {
     background: rgba(255, 255, 255, 0.8);
 }
+
 .sidebar {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 2px 6px #dbdbdb;

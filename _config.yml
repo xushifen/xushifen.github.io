@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Hua's Blog
+title: 物以类聚，人以群分
 subtitle: 做好当下
-#description: Bioinformatics, postgraduate, Worker
-author: Hua Zou
+description: 争做技术达人
+author: 华仔少年
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
 date_format: '%Y-%m-%d'
