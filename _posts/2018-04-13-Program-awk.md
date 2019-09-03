@@ -5,6 +5,7 @@ date:   2018-04-12 11:10:00
 updated: 2019-08-30
 categories: 编程入门
 tags: awk
+excerpt: awk是一种处理文本文件的语言，是一个强大的文本分析工具。之所以叫AWK是因为其取了三位创始人 Alfred Aho，Peter Weinberger, 和 Brian Kernighan 的 Family Name 的首字符。
 ---
 
 
@@ -414,7 +415,7 @@ awk -f add.awk
 
 
 
-### Reference 
+### 引用
 
 1. [awk参考](https://book.saubcy.com/AwkInAction/section_1/chapter_2_5.html)
 

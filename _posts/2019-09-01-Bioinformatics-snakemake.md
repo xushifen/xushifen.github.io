@@ -5,6 +5,7 @@ date:   2019-09-01
 updated: 2019-09-01
 categories: 生物信息
 tags: 工具
+excerpt: 随着生物信息分析的发展，越来越多的分析是一步一步由上往下的，先前我们更多的是用shell语言串联这些子分析，但它的缺点也很明显--可读性和重复性交叉。snakemake是基于python语言开发的编写分析流程的工具，它只需要配置号配置文件和输入文件，我们不用关心每个子分析的结果文件，只要在命令行输入输出结果名字即可。运行过程可以配置如软件运行参数、运行日志文件等等，这极大方便了生信分析人员。
 ---
 
 ### What's Snakemake?
@@ -243,7 +244,7 @@ rule diffexp:
 
 
 
-### Reference 
+### 引用
 
 1. [snakemake](https://snakemake.readthedocs.io/en/latest/index.html)
 2. [snakemake使用笔记](https://www.jianshu.com/p/14b9eccc0c0e)

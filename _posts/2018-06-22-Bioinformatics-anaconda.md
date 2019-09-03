@@ -5,13 +5,10 @@ date:   2018-06-22 10:36:00
 updated: 2019-08-30
 categories: 生物信息
 tags: anaconda
+excerpt: Python渐渐成为最流行的编程语言之一，在数据分析、机器学习和深度学习等方向Python语言更是主流。Python的版本比较多，并且它的库也非常广泛，同时库和库之间存在很多依赖关系，所以在库的安装和版本的管理上很麻烦。Conda是一个管理版本和Python环境的工具，它使用起来非常容易。
 ---
 
-
-
-### Anaconda:管理python等包的软件
-
-Python渐渐成为最流行的编程语言之一，在数据分析、机器学习和深度学习等方向Python语言更是主流。Python的版本比较多，并且它的库也非常广泛，同时库和库之间存在很多依赖关系，所以在库的安装和版本的管理上很麻烦。Conda是一个管理版本和Python环境的工具，它使用起来非常容易。![](https://raw.githubusercontent.com/HuaZou/HuaZou.github.io/master/_posts/img/anaconda.png)
+![](https://raw.githubusercontent.com/HuaZou/HuaZou.github.io/master/_posts/img/anaconda.png)
 
 ### 命令集合
 
@@ -54,3 +51,4 @@ Python渐渐成为最流行的编程语言之一，在数据分析、机器学�
    | 依赖包  | build              | 包安装的依赖工具（tools）       | build:   - git  - cmake           |
    |      | host               |                       |                                   |
    |      | run                | 包安装的依赖项(dependencies) | run:   - numpy 1.4                |
+

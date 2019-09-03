@@ -117,3 +117,14 @@
 .with-love {
     color: rgb(255, 113, 168);
 }
+
+// 主题美化之网站标题栏背景变色
+.site-meta {
+  background: $blue; //天空的颜色，和我的眼镜是绝配
+}
+
+// Custom styles：背景图片的设置
+body {
+  background: url(/assets/background/18041.jpg);
+  background-attachment: fixed;
+}

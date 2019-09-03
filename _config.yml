@@ -7,8 +7,8 @@
 
 # Site settings
 title: Hua's Blog
-subtitle: Less is more.
-description: Bioinformatics, postgraduate, Worker.
+subtitle: 做好当下
+#description: Bioinformatics, postgraduate, Worker
 author: Hua Zou
 # Support language: de, en, fr-FR, id, ja, ko, pt-BR, pt, ru, zh-Hans, zh-hk, zh-tw
 language: zh-Hans
@@ -687,7 +687,7 @@ canvas_nest: true
 three_waves: false
 
 # canvas_lines
-canvas_lines: false
+canvas_lines: true
 
 # canvas_sphere
 canvas_sphere: false

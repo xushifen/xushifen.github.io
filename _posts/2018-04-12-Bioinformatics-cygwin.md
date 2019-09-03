@@ -5,17 +5,10 @@ date:   2018-04-11 23:10:00
 updated: 2019-08-30
 categories: 生物信息
 tags: 工具
+excerpt: cygwins是在window下运行的一款Linux模拟软件，对学习Linux操作命令很方便。与此同时，对我们这种生物信息分析狗，既要在windows下工作，又希望能像linux bash 样可以使用命令行操作文件，该软件是个很友好的工具。
 ---
 
-
-
-### [Cygwin](https://en.wikipedia.org/wiki/Cygwin)：生信分析必备工具之一
-
-在window下运行的一款Linux模拟软件，对学习Linux操作命令很方便。与此同时，对我们这种生物信息分析狗，既要在windows下工作，又希望能像linux bash 样可以使用命令行操作文件，该软件是个很友好的工具。
-
-
-
-####  安装Cygwin
+###  安装Cygwin
 
 **1)**. 登陆[Cygwin官网](https://cygwin.com/)，选择与windows系统相同位数的版本
 
@@ -38,7 +31,7 @@ tags: 工具
 
 
 
-#### 安装apt-cyg包
+### 安装apt-cyg包
 
 因为Cygwin坑爹的设计，每次安装新的包总需要重新安装该软件一次，因此有开发者设计了apt-cyg包，该包功能上类似Linux的[apt-get](https://baike.baidu.com/item/apt-get/2360755?fr=aladdin)：
 
@@ -83,9 +76,7 @@ make
 cp src/fatty.exe /bin
 ```
 
-
-
-#### 免密码登陆
+### 免密码登陆
 
 通过Cygwin登陆大型机，需要用户名和密码，但可以通过[RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))生成公钥形式解决
 
@@ -97,9 +88,7 @@ cat ~/.ssh/id_rsa.pub
 * 将公钥复制粘贴到大型机的.ssh目录下authorized_keys（若没有，则创建）
 
 
-
-
-#### 本地与大型机传输文件
+### 本地与大型机传输文件
 
 使用[scp](https://www.cnblogs.com/likui360/p/6011769.html)命令，在使用期先设置大型机的别名信息，方便使用scp命令
 
@@ -113,7 +102,7 @@ scp file.txt  alias2:/hwfssz1/filedir/  # 本地传输到大型机
 
 
 
-#### 小技巧
+### 小技巧
 
 * 命令行打开文件或者文件夹：cygstart: start a program or open a file or url
 
@@ -144,7 +133,7 @@ echo alias find=find.cyg >> ~/.bash_profile
 
 
 
-#### Reference
+### 引用
 
 1. [安装过程](http://allthingsmarked.com/2006/08/17/how-to-set-up-a-windows-ssh-server-for-vnc-tunneling/)
 
